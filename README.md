@@ -98,7 +98,6 @@ cake-bakery/
 - **Password**: 1234
 ## Screenshots
 ![Screenshot 2024-06-09 101458](https://github.com/Harshkumar200211/cake-bakery/assets/133088420/629da346-3dab-4307-aa1c-18acd60952a2)
-![Screenshot 2024-06-09 101512](https://github.com/Harshkumar200211/cake-bakery/assets/133088420/6fc29a09-4dd9-4d7c-a122-57f17f16c440)
 ![Screenshot 2024-06-09 101512](https://github.com/Harshkumar200211/cake-bakery/assets/133088420/07102586-01d0-49a7-99b2-65bb837dc38e)
 ![Screenshot 2024-06-09 101542](https://github.com/Harshkumar200211/cake-bakery/assets/133088420/5be70161-a56f-488a-97ef-046c9c6ba8c1)
 ![Screenshot 2024-06-09 101555](https://github.com/Harshkumar200211/cake-bakery/assets/133088420/88214f6a-260a-4a00-8f35-ca2193d70fdb)
