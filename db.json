@@ -1,0 +1,72 @@
+{
+  "admin": [
+    {
+      "username": "harsh@gmail.com",
+      "password": "1234",
+      "id": "fe0c"
+    }
+  ],
+  "signupdata": [
+    {
+      "id": "7809",
+      "email": "harsh@gmail.com",
+      "username": "Sunny kumar",
+      "password": "123",
+      "phone": "9005502327",
+      "address": "Hardoi Gujar",
+      "picture": null
+    },
+    {
+      "id": "f54d",
+      "email": "ramesh@gmail.com",
+      "username": "ramesh kumar",
+      "phone": "9005502327",
+      "address": "bhopal"
+    },
+    {
+      "id": "0b29",
+      "email": "hari@gmail.com",
+      "username": "hari",
+      "phone": "09005502327",
+      "address": "bhopal"
+    },
+    {
+      "id": "a690",
+      "email": "shanihardoi2002@gmail.com",
+      "username": "om",
+      "phone": "09005502327",
+      "address": "Hardoi Gujar"
+    },
+    {
+      "id": "b03d",
+      "email": "shanpihardoi2002@gmail.com",
+      "username": "h",
+      "phone": "09005502327",
+      "address": "Hardoi Gujar"
+    },
+    {
+      "id": "ff8b",
+      "email": "abc@gmail.com",
+      "username": "harsh",
+      "password": "1234",
+      "phone": "9005502327",
+      "address": "indore",
+      "picture": "data:image/jpeg;base64,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"
+    },
+    {
+      "id": "bc26",
+      "email": "erf@gmail.com",
+      "username": "hari",
+      "phone": "8989766768",
+      "address": "kanpur"
+    }
+  ],
+  "msg": [
+    {
+      "id": "d57f",
+      "name": "Harsh Kumar",
+      "email": "shanihardoi2002@gmail.com",
+      "Description": "i want react js based website "
+    }
+  ]
+}

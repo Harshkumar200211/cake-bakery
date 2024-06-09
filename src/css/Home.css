@@ -1,0 +1,137 @@
+/* Home Styles */
+
+.home-container {
+  padding: 2rem;
+}
+
+.home-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem 0;
+  color: #C7B7A3;
+}
+
+.legend {
+  color: white;
+  background-color: grey;
+}
+
+.intro {
+  margin: 3rem 0;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.intro-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  color: #C7B7A3;
+}
+
+.intro-text {
+  font-size: 1.125rem;
+}
+
+.featured-products {
+  margin: 3rem 0;
+  padding: 0 1.5rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 1rem 0;
+  color: #C7B7A3;
+}
+
+.featured-cakes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.featured-cake {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.cake-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.cake-description {
+  color: #4A5568; /* gray-700 */
+}
+
+.testimonials {
+  margin: 3rem 0;
+  padding: 0 1.5rem;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.testimonial {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.testimonial-text {
+  font-size: 1.125rem;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.testimonial-author {
+  text-align: right;
+  margin-top: 0.5rem;
+}
+
+.call-to-action {
+  margin: 3rem 0;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.cta-text {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background-color: #C7B7A3;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #B5A394;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+  .featured-cakes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,51 @@
+/* Footer Styles */
+
+.footer-container {
+    background-color: #B5C18E;
+    color: white;
+    font-family: 'Calibri', sans-serif;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-section {
+    margin-bottom: 1.5rem;
+}
+
+.footer-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.footer-subtitle {
+    margin-top: 0.5rem;
+}
+
+.footer-center {
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-link {
+    color: white;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #D1D5DB; /* gray-300 */
+}

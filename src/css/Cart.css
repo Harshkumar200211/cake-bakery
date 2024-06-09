@@ -1,0 +1,202 @@
+.cart-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.cart-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #B5C18E;
+}
+
+.cart-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 640px) {
+    .cart-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    .cart-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.cart-item {
+    border: 1px solid #E2E8F0;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item-image {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.cart-item-name {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #2D3748;
+    margin-bottom: 0.5rem;
+}
+
+.cart-item-price, .cart-item-total {
+    font-size: 0.875rem;
+    color: #718096;
+}
+
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.cart-item-button {
+    font-size: 0.875rem;
+    color: #718096;
+    padding: 0.25rem;
+    background-color: #EDF2F7;
+    border-radius: 0.25rem;
+    margin: 0 0.5rem;
+}
+
+.cart-item-count {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.cart-item-remove {
+    margin-top: 1rem;
+    background-color: #F56565;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cart-item-remove:hover {
+    background-color: #E53E3E;
+}
+
+.order-button {
+    margin-top: 2rem;
+    background-color: #48BB78;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-button:hover {
+    background-color: #38A169;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #B5C18E;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.modal-form-group {
+    margin-bottom: 1rem;
+}
+
+.modal-label {
+    font-size: 0.875rem;
+    font-weight: medium;
+    color: #4A5568;
+    margin-bottom: 0.25rem;
+}
+
+.modal-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #CBD5E0;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.modal-form-button {
+    margin-top: 1rem;
+}
+
+.download-button {
+    background-color: #48BB78;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.download-button:hover {
+    background-color: #38A169;
+}
+
+.empty-cart {
+    text-align: center;
+    color: #718096;
+    font-size: 1rem;
+}
+
+.pdf-page {
+    padding: 1rem;
+}
+
+.pdf-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.pdf-text {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.pdf-item-list {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.pdf-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5rem;
+}
+
+.pdf-item-index, .pdf-item-name, .pdf-item-price, .pdf-item-quantity, .pdf-item-total {
+    font-size: 0.875rem;
+    width: 20%;
+}
+
+.pdf-total {
+    text-align: right;
+    font-size: 1.125rem;
+}

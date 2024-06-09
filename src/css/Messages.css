@@ -1,0 +1,76 @@
+/* Messages Styles */
+
+.messages-container {
+    min-height: 100vh;
+    background-color: #f3f4f6; /* bg-gray-100 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .messages-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #B5C18E; /* bg-[#B5C18E] */
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #B5C18E; /* bg-[#B5C18E] */
+  }
+  
+  .requests-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .request-card {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+  
+  .request-details {
+    margin-bottom: 0.5rem;
+  }
+  
+  .request-label {
+    font-weight: bold;
+  }
+  
+  .request-info {
+    color: #4A5568; /* text-gray-700 */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .accept-button,
+  .reject-button {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+  }
+  
+  .accept-button {
+    background-color: #38A169; /* bg-green-500 */
+  }
+  
+  .reject-button {
+    background-color: #E53E3E; /* bg-red-500 */
+  }
+  
+  .accept-button:hover,
+  .reject-button:hover {
+    background-color: #2F855A; /* hover:bg-green-600 */
+  }
+  

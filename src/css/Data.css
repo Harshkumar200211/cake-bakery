@@ -1,0 +1,109 @@
+/* Data Page Styles */
+
+.data-container {
+    padding: 1rem;
+}
+
+.data-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #B5C18E;
+}
+
+.request-button, .add-button {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.request-button {
+    float: right;
+    margin-right: 3rem;
+    background-color: #38a169; /* green-400 */
+    color: white;
+}
+
+.request-button:hover {
+    background-color: #2f855a; /* green-500 */
+}
+
+.add-button {
+    background-color: #38a169; /* green-400 */
+    color: white;
+}
+
+.add-button:hover {
+    background-color: #2f855a; /* green-500 */
+}
+
+.data-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 640px) {
+    .data-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .data-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.data-card {
+    background-color: white;
+    border: 1px solid #E2E8F0; /* gray-200 */
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.button-group {
+    margin-top: 0.5rem;
+}
+
+.remove-button, .update-button {
+    margin-right: 0.5rem;
+    font-weight: bold;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.remove-button {
+    background-color: #e53e3e; /* red-500 */
+    color: white;
+}
+
+.remove-button:hover {
+    background-color: #c53030; /* red-600 */
+}
+
+.update-button {
+    background-color: #4299e1; /* blue-500 */
+    color: white;
+}
+
+.update-button:hover {
+    background-color: #3182ce; /* blue-600 */
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

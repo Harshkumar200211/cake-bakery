@@ -1,0 +1,91 @@
+/* Profile Styles */
+
+.profile-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F1F1F1;
+  }
+  
+  .profile-card {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    max-width: 24rem;
+    width: 100%;
+  }
+  
+  .profile-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #B5C18E;
+    text-align: center;
+  }
+  
+  .profile-picture {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  
+  .profile-picture-container {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .remove-picture-button {
+    background-color: #EF4444;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .remove-picture-button:hover {
+    background-color: #DC2626;
+  }
+  
+  .upload-picture-button {
+    background-color: #B5C18E;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .upload-picture-button:hover {
+    background-color: #A3B397;
+  }
+  
+  .input-file {
+    margin-top: 1rem;
+  }
+  
+  .details-update-button {
+    background-color: #B5C18E;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .details-update-button:hover {
+    background-color: #A3B397;
+  }
+  
