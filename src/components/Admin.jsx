@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import '../css/Admin.css';
 
 const Admin = () => {
     const navigate = useNavigate();
@@ -28,34 +27,34 @@ const Admin = () => {
     };
 
     return (
-        <div className="container">
-            <div className="form-wrapper">
-                <h2 className="title">Admin Login</h2>
-                <form onSubmit={handleAdmin} className="form">
-                    <div className="form-group">
-                        <label htmlFor="username" className="label">Username:</label>
+        <div className="flex items-center justify-center min-h-screen bg-gray-100">
+            <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
+                <h2 className="text-2xl font-bold mb-6 text-center" style={{ color: '#B5C18E' }}>Admin Login</h2>
+                <form onSubmit={handleAdmin} className="space-y-6">
+                    <div>
+                        <label htmlFor="username" className="block text-sm font-medium text-gray-700">Username:</label>
                         <input
                             id="username"
                             type="text"
                             value={username}
                             onChange={e => setUserName(e.target.value)}
                             required
-                            className="input"
+                            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                         />
                     </div>
-                    <div className="form-group">
-                        <label htmlFor="password" className="label">Password <span className="required">*</span>:</label>
+                    <div>
+                        <label htmlFor="password" className="block text-sm font-medium text-gray-700">Password <span className="text-red-500">*</span>:</label>
                         <input
                             id="password"
                             type="password"
                             value={password}
                             onChange={e => setPassword(e.target.value)}
                             required
-                            className="input"
+                            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                         />
                     </div>
                     <div>
-                        <button type="submit" className="button">
+                        <button type="submit" className="w-full py-2 px-4 bg-red-400 hover:bg-red-700 text-white font-semibold rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" style={{ backgroundColor: '#B5C18E' }}>
                             Admin Login
                         </button>
                     </div>

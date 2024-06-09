@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import '../css/Messages.css';
 
 function Messages() {
+  const navigate = useNavigate();
   const [requests, setRequests] = useState([]);
   const location = useLocation();
 
@@ -49,39 +49,42 @@ function Messages() {
 };
 
   return (
-    <div className="messages-container">
-      <h1 className="messages-title">USER REQUESTS</h1>
-      <div className="requests-container">
-        {requests.map((request) => (
-          <div key={request.id} className="request-card">
-            <div className="request-details">
-              <p className="request-label">Name:</p>
-              <p className="request-info">{request.name}</p>
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4 sm:p-6 lg:p-8">
+      <div className="bg-white shadow-lg rounded-lg p-6 sm:p-8 lg:p-10 max-w-xs sm:max-w-md lg:max-w-lg w-full">
+        <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 sm:mb-6 text-center text-white bg-[#B5C18E] p-2 rounded-lg">
+          USER REQUESTS
+        </h1>
+        <div className="space-y-6">
+          {requests.map((request) => (
+            <div key={request.id} className="bg-gray-200 rounded-lg p-6">
+              <div className="space-y-2">
+                <div className="text-lg font-semibold">
+                  <p>Name: {request.name}</p>
+                </div>
+                <div className="text-lg font-semibold">
+                  <p>Email: {request.email}</p>
+                </div>
+                <div className="text-lg font-semibold">
+                  <p>Description: {request.Description}</p>
+                </div>
+              </div>
+              <div className="flex justify-center space-x-4">
+                <button
+                  className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                  onClick={handleAccept}
+                >
+                  Accept
+                </button>
+                <button
+                  className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                  onClick={() => handleReject(request.id)}
+                >
+                  Reject
+                </button>
+              </div>
             </div>
-            <div className="request-details">
-              <p className="request-label">Email:</p>
-              <p className="request-info">{request.email}</p>
-            </div>
-            <div className="request-details">
-              <p className="request-label">Description:</p>
-              <p className="request-info">{request.Description}</p>
-            </div>
-            <div className="button-container">
-              <button
-                className="accept-button"
-                onClick={handleAccept}
-              >
-                Accept
-              </button>
-              <button
-                className="reject-button"
-                onClick={() => handleReject(request.id)}
-              >
-                Reject
-              </button>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

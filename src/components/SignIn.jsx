@@ -1,4 +1,4 @@
-// SignIn.css
+// SignIn.jsx
 import React, { useState } from 'react';
 import { FaEnvelope, FaLock } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
@@ -34,9 +34,9 @@ const SignIn = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-200">
+    <div className="min-h-screen flex items-center justify-center bg-F1F1F1">
       <div className="bg-white shadow-md rounded-lg p-8 max-w-md w-full transform transition-all duration-200 hover:scale-105">
-        <h2 className="text-2xl font-bold mb-8 text-center text-green">Sign In</h2>
+        <h2 className="text-2xl font-bold mb-8 text-center text-B5C18E">Sign In</h2>
         <form onSubmit={(e) => { e.preventDefault(); handleSignIn(); }}>
           <div className="mb-4 relative">
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email" style={{ color: '#C7B7A3' }}>
@@ -74,13 +74,13 @@ const SignIn = () => {
           </div>
           <div className="flex items-center justify-between mb-4">
             <button
-              className="bg-green hover:bg-green-dark text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transform transition-all duration-300 hover:scale-105"
+              className="bg-B5C18E hover:bg-C7B7A3 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transform transition-all duration-300 hover:scale-105"
               type="submit"
             >
               Sign In
             </button>
             <Link
-              className="inline-block align-baseline font-bold text-sm text-green hover:text-green-dark transform transition-all duration-300 hover:scale-105"
+              className="inline-block align-baseline font-bold text-sm text-B5C18E hover:text-C7B7A3 transform transition-all duration-300 hover:scale-105"
               to="/signup"
             >
               Create Account
@@ -88,7 +88,7 @@ const SignIn = () => {
           </div>
           <div className="text-center">
             <Link
-              className="text-green hover:text-green-dark transform transition-all duration-300 hover:scale-105"
+              className="text-B5C18E hover:text-C7B7A3 transform transition-all duration-300 hover:scale-105"
               to="/forgot-password"
             >
               Forgot Password?
